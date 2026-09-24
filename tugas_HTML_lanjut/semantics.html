@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Sistem Informasi</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            color: #222;
+            background: #fff;
+        }
+
+        .container {
+            width: 86%;
+            max-width: 1080px;
+            margin: 12px auto;
+            border: 1px solid #999;
+        }
+
+        header {
+            height: 64px;
+            border-bottom: 1px solid #999;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px;
+        }
+
+        .logo {
+            width: 105px;
+            height: 52px;
+            border: 1px solid #aaa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 9px;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+
+        nav {
+            flex: 1;
+            height: 34px;
+            display: flex;
+            border: 1px solid #aaa;
+        }
+
+        nav a {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px solid #aaa;
+            text-decoration: none;
+            color: #222;
+            font-weight: bold;
+            font-size: 11px;
+        }
+
+        nav a:last-child { border-right: none; }
+
+        .admin {
+            width: 70px;
+            height: 34px;
+            border: 1px solid #aaa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6a2ca0;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 11px;
+        }
+
+        .page-title {
+            text-align: center;
+            height: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #999;
+        }
+
+        .page-title h1 {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 3.5fr 1.25fr;
+            min-height: 450px;
+        }
+
+        article {
+            padding: 12px;
+            border-right: 1px solid #999;
+        }
+
+        article h2 {
+            font-size: 16px;
+            margin: 0 0 10px;
+        }
+
+        article p {
+            font-size: 11px;
+            line-height: 1.45;
+            text-align: justify;
+            margin: 7px 0;
+        }
+
+        /* Kotak video dibuat menyerupai gambar tugas */
+        .youtube-box {
+            width: 82%;
+            max-width: 700px;
+            margin: 10px 0 5px;
+            border: 1px solid #777;
+            background: #000;
+        }
+
+        .youtube-box img {
+            width: 100%;
+            display: block;
+        }
+
+        .youtube-box a {
+            display: block;
+            line-height: 0;
+        }
+
+        .video-note {
+            font-size: 9px;
+            color: #555;
+            margin-top: 3px;
+        }
+
+        aside {
+            padding: 10px;
+        }
+
+        aside h3 {
+            font-size: 13px;
+            margin: 0 0 8px;
+        }
+
+        aside ul {
+            padding-left: 18px;
+            margin-top: 5px;
+        }
+
+        aside li {
+            margin-bottom: 7px;
+            font-size: 10px;
+        }
+
+        aside a {
+            color: #2d208e;
+        }
+
+        footer {
+            border-top: 1px solid #999;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+
+        .footer-box {
+            min-height: 115px;
+            padding: 10px;
+            border-right: 1px solid #999;
+        }
+
+        .footer-box:last-child {
+            border-right: none;
+        }
+
+        .footer-box h3 {
+            font-size: 11px;
+            margin-top: 0;
+        }
+
+        .footer-box p,
+        .footer-box li {
+            font-size: 9px;
+            line-height: 1.4;
+        }
+
+        .copyright {
+            border-top: 1px solid #999;
+            padding: 6px 10px;
+            font-size: 9px;
+        }
+
+        @media (max-width: 750px) {
+            .container { width: 96%; }
+            header { height: auto; flex-wrap: wrap; }
+            .logo { width: 100px; }
+            nav { order: 3; width: 100%; }
+            main, .footer-grid { grid-template-columns: 1fr; }
+            article { border-right: none; border-bottom: 1px solid #999; }
+            .youtube-link { width: 100%; }
+            .footer-box { border-right: none; border-bottom: 1px solid #999; }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="logo">
+            SISTEM<br>
+            INFORMASI<br>
+            Telkom University
+        </div>
+
+        <nav>
+            <a href="#">Tentang Kami</a>
+            <a href="#">Akademik</a>
+            <a href="#">Dosen &amp; Staf</a>
+            <a href="#">Kerja Sama</a>
+            <a href="#">Blog</a>
+        </nav>
+
+        <a class="admin" href="#">Admin</a>
+    </header>
+
+    <section class="page-title">
+        <h1>Blog Sistem Informasi</h1>
+    </section>
+
+    <main>
+
+        <article>
+            <h2>Dua Wisudawan Sistem Informasi Berhasil Meraih Predikat Cumlaude</h2>
+
+            <p>
+                Institut Teknologi Telkom Surabaya telah menggelar prosesi wisuda
+                secara luring. Pada kegiatan tersebut, mahasiswa Sistem Informasi
+                turut memperoleh prestasi akademik dan menjadi bagian dari kegiatan
+                penting kampus.
+            </p>
+
+            <p>
+                Prestasi tersebut menjadi bukti semangat mahasiswa dalam menyelesaikan
+                pendidikan. Kegiatan akademik dan informasi terbaru Program Studi
+                Sistem Informasi dapat diikuti melalui blog ini.
+            </p>
+
+            <!--
+                Video menggunakan YouTube.
+                ID video di bawah berasal dari kanal YouTube ITTelkom Surabaya.
+                Jika dosen memberikan video YouTube yang PERSIS seperti gambar tugas,
+                cukup ganti bagian setelah /embed/ dengan ID video tersebut.
+            -->
+            <a class="youtube-link"
+   href="https://www.youtube.com/results?search_query=Sidang+Terbuka+Senat+Dies+Natalis+Ke-4+ITTelkom+Surabaya"
+   target="_blank"
+   rel="noopener noreferrer">
+    <img src="youtube_wisuda.png"
+         alt="Video Sidang Terbuka Senat Dies Natalis Ke-4 ITTelkom Surabaya">
+</a>
+<div class="video-note">Klik gambar untuk membuka video terkait di YouTube.</div>
+
+            <p>
+                Berbagai informasi mengenai kegiatan mahasiswa, akademik, dan
+                perkembangan Program Studi Sistem Informasi dapat ditemukan
+                melalui halaman blog ini.
+            </p>
+        </article>
+
+        <aside>
+            <h3>Artikel Terbaru</h3>
+            <ul>
+                <li><a href="#">Dua Wisudawan Sistem Informasi Berhasil Meraih Predikat Cumlaude</a></li>
+                <li><a href="#">Mahasiswa Sistem Informasi Raih Penghargaan</a></li>
+                <li><a href="#">ITTelkom Surabaya Hadirkan Program Akademik Terbaru</a></li>
+                <li><a href="#">Kegiatan Mahasiswa Sistem Informasi</a></li>
+                <li><a href="#">Informasi Akademik Terbaru</a></li>
+            </ul>
+
+            <h3>Artikel Terpopuler</h3>
+            <ul>
+                <li><a href="#">Dua Wisudawan Sistem Informasi Berhasil Meraih Predikat Cumlaude</a></li>
+                <li><a href="#">Mahasiswa Sistem Informasi Raih Penghargaan</a></li>
+                <li><a href="#">Kegiatan Akademik Sistem Informasi</a></li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+
+            <section class="footer-box">
+                <h3>Sistem Informasi</h3>
+                <p>
+                    Sistem Informasi mempelajari teknologi informasi dan proses
+                    bisnis untuk membantu organisasi dalam mengelola informasi.
+                </p>
+            </section>
+
+            <section class="footer-box">
+                <h3>Tautan Penting</h3>
+                <ul>
+                    <li>Mahasiswa &amp; Alumni</li>
+                    <li>Kerja Sama</li>
+                    <li>Program Studi</li>
+                    <li>Website Kampus</li>
+                </ul>
+            </section>
+
+            <section class="footer-box">
+                <h3>Info Kontak</h3>
+                <ul>
+                    <li>Surabaya, Jawa Timur</li>
+                    <li>Email: si@example.com</li>
+                    <li>Instagram</li>
+                </ul>
+            </section>
+
+        </div>
+
+        <div class="copyright">
+            Copyright &copy; 2026 Sistem Informasi
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>
